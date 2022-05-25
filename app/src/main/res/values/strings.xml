@@ -3,4 +3,6 @@
     <string name="nome_filme">Interestellar</string>
     <string name="filme">Filmes</string>
     <string name="descricao_imagem_filme">O ator Matthew McConaughey com roupa de astronauta andando em um local cheio de gelo</string>
+    <string name="botao_detalhes_filme">DETALHES DO FILME</string>
+    <string name="botao_mensagem">MENSAGEM</string>
 </resources>

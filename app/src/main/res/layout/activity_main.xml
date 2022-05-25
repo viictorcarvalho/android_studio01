@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"> />
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/altura_img"
-        android:contentDescription="@string/descricao_imagem_filme"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="@dimen/margem_36"
-        android:src="@drawable/filme" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <TextView
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/altura_img"
+            android:layout_marginTop="@dimen/margem_36"
+            android:contentDescription="@string/descricao_imagem_filme"
+            android:scaleType="centerCrop"
+            android:src="@drawable/filme" />
+
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -23,4 +28,20 @@
         android:text="@string/nome_filme"
         android:textSize="@dimen/tamanho_texto_16" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/botao_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_mensagem"
+        android:layout_margin="@dimen/margem_24"
+        android:backgroundTint="@color/teal_700"/>
+
+    <Button
+        android:id="@+id/botao_detalhe_filme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_detalhes_filme"
+        android:layout_margin="@dimen/margem_24"/>
+
+    </LinearLayout>
+</ScrollView>
